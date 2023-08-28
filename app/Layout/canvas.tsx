@@ -67,7 +67,6 @@ class Canvas extends Component<CanvasProps> {
         this.manager.onProgress = (url, itemsLoaded,itemsTotal) => {
           const ProgressVal = (itemsLoaded/itemsTotal) * 100;
           if(ProgressVal === 100){
-            console.log('Loading Completed');
             handleLoading()
           }
         }
@@ -200,18 +199,21 @@ class Canvas extends Component<CanvasProps> {
     const { condition, activeData, swatchData, handleSwatchClick } = this.props;
 
     return (
-      <div className="w-full h-3/5 relative z-10 lg:w-1/2 lg:h-full" ref={this.containerRef}>
-      <SwatchWrapper
+      <div
+      ref={this.containerRef}
+      className="w-full h-3/5 relative z-10 lg:w-1/2 lg:h-full"
+      id="container"
+    >
+ <canvas className="webgl w-full h-full relative z-10"></canvas>
+ <SwatchWrapper
         activeData={activeData}
         swatchData={swatchData}
         handleSwatchClick={handleSwatchClick}
         condition={condition}
       />
       <div className="highlight w-2/5 h-1/2 bg-[#D7B172] absolute inset-x-40 top-0 -z-10 rounded-br-full rounded-bl-full md:inset-x-60  lg:inset-x-40"></div>
-      <div className="canvas-container ">
-        <canvas className="webgl w-full h-full relative z-10"></canvas>
-      </div>
     </div>
+
     );
   }
 }
