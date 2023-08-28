@@ -3,10 +3,16 @@ import gsap from "gsap";
 
 interface ContentProps {
   activeData: any; // Adjust the type accordingly
+  condition:any,
+  setCondition:any
 }
 
-const Content = ({ activeData }: ContentProps) => {
+const Content = ({ activeData,condition,setCondition }: ContentProps) => {
   useEffect(() => {
+
+    if(condition) return
+    setCondition(true)
+
     gsap.to('.button', {
         color:activeData.buttonColor.text,
         backgroundColor:activeData.buttonColor.background,
@@ -26,6 +32,10 @@ const Content = ({ activeData }: ContentProps) => {
         duration:1,
         stagger:{
             amount:0.3
+        },
+
+        onComplete: () => {
+          setCondition(false)
         }
     })
   }, [activeData]); // Make sure to include activeData in the dependencies
