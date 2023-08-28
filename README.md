@@ -1,9 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JOMISFIT
+3D Animated Website with three.js, GSAP, Next.js, and TypeScript
+Welcome to the repository for my 3D animated website project! 🚀
 
-## Getting Started
+
+![Website Demo](https://res.cloudinary.com/ds2fe7xai/image/upload/v1693230513/image_2023-08-28_19-00-15_uxhtat.png)
+
+Overview
+This project showcases the synergy of cutting-edge web technologies to create an immersive user experience through 3D graphics and animations. By combining the power of three.js, GSAP, Next.js, and TypeScript, we've crafted a visually captivating and seamless digital journey.
+
+Features
+🌌 3D Visuals: Explore mesmerizing 3D environments that transport you to dynamic realms.
+✨ Animations: Experience fluid animations brought to life by the GSAP library, adding depth to the user interactions.
+⚙️ Next.js: Harness the benefits of server-side rendering, enhanced performance, and SEO optimization.
+📜 TypeScript: Elevate the development process with the safety and clarity of TypeScript's type system.
+
+# How to Use
+Clone the Repository:
+git clone https://github.com/yourusername/3d-animated-website.git
+
+cd 3d-animated-website
+
+Install Dependencies:
 
 First, run the development server:
 
+```bash
+npm install
+# or
+yarn add
+```
+Then Run Server by
 ```bash
 npm run dev
 # or
@@ -14,21 +40,14 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributing
+Contributions are welcome! Whether you're experienced with web development or just starting out, your ideas and improvements can make a difference. Feel free to fork this repository, make changes, and submit pull requests.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Credits
+three.js: https://threejs.org/
+GSAP: https://greensock.com/gsap/
+Next.js: https://nextjs.org/
+TypeScript: https://www.typescriptlang.org/
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+🌟 Ready to explore a world of 3D animations and captivating experiences? Check out the live website here and dive into the future of web design! #WebTech #3DAnimation #Nextjs #TypeScript #WebDevelopment #Innovation
